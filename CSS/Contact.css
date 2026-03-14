@@ -1,0 +1,46 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a.active{
+  border-bottom:2px solid red;
+  border-radius: 5px;
+}
+
+.contact-header {
+  background: url("../Images/contact-bg.png") center/cover no-repeat;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.contact-header h1 {
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+.contact-section {
+  padding: 60px 20px;
+}
+
+.contact-info .bi {
+  font-size: 2rem;
+  color: #ff5722;
+  margin-bottom: 10px;
+}
+
+.btn-orange {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+}
+
+.btn-orange:hover {
+  background-color: #e64a19;
+}
+
+.text-pink{
+  color:rgb(255, 0, 98);
+}
+
+

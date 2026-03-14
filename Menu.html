@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Css file -->
+  <link rel="stylesheet" href="CSS\Menu.css">
+
+  <!--Brand Logo-->
+  <link rel="icon" type="image/x-icon" href="Images/favicon_io/favicon.ico">
+  <title>Hunger Hub|Menu</title>
+
+ 
+</head>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    let hash = window.location.hash;
+
+    if (hash) {
+        let triggerEl = document.querySelector('[data-bs-target="' + hash + '"]');
+
+        if (triggerEl) {
+            let tab = new bootstrap.Tab(triggerEl);
+            tab.show();
+        }
+    }
+});
+</script>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container ">
+            <!-- Brand logo -->
+             <a href="index.html" class="navbar-brand fw-bold">Hunger <span class="bg-warning rounded p-2 text-dark"> Hub</span></a>
+        
+
+         <button class="navbar-toggler" data-bs-target="#mynavbar" data-bs-toggle="collapse"><span class="navbar-toggler-icon"></span> </button>
+
+          <!-- nav bar links -->
+
+         <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav ms-auto">
+            <li>
+                <a href="index.html" class="nav-link  ">Home</a>
+            </li>
+            <li>
+                <a href="Menu.html" class="nav-link active">Menu</a>
+            </li>
+            
+            
+            <li>
+                <a href="Contact.html" class="nav-link">Contact</a>
+            </li>
+             <li>
+                <button class="btn btn-danger ms-2 mt-1">Order Now</button>
+            </li>
+          </ul>
+          </div>
+      </div>
+
+</nav>
+
+<!-- Header -->
+<section class="menu-header">
+  <h1>Our Delicious Menu</h1>
+  <p>🍔Discover all our tasty dishes made fresh daily🍕</p>
+</section>
+
+
+
+<!-- Menu Tabs -->
+<section class="py-5">
+  <div class="container">
+
+    <!-- Tabs Navigation -->
+    <ul class="nav nav-pills mb-4 justify-content-center" id="menuTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pizza-tab" data-bs-toggle="pill" data-bs-target="#pizza" type="button" role="tab">Pizza</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="burger-tab" data-bs-toggle="pill" data-bs-target="#burger" type="button" role="tab">Burgers</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="Biryani-tab" data-bs-toggle="pill" data-bs-target="#Biryani" type="button" role="tab">Biryani</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="desserts-tab" data-bs-toggle="pill" data-bs-target="#desserts" type="button" role="tab">Desserts</button>
+      </li>
+    </ul>
+
+    <!-- Tabs Content -->
+    <div class="tab-content" id="menuTabsContent">
+
+      <!-- Pizza Category -->
+      <div class="tab-pane fade show active" id="pizza" role="tabpanel">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card shadow">
+              <img src="Images/Margherita_Pizza_menu.jpg" class="card-img-top" alt="Margherita Pizza">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-semibold">Margherita Pizza</h5>
+                <p class="card-text">Fresh mozzarella, basil leaves, rich tomato sauce</p>
+                <p class="text-danger fw-bold">₹199.00</p>
+                <button class="btn btn-orange">Order Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card shadow">
+              <img src="Images/Pepperoni_Pizza_menu.jpg" class="card-img-top" alt="Pepperoni Pizza">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-semibold">Pepperoni Pizza</h5>
+                <p class="card-text">Spicy pepperoni slices, melted mozzarella, classic tomato sauce</p>
+                <p class="text-danger fw-bold">₹329.00</p>
+                <button class="btn btn-orange">Order Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card shadow">
+              <img src="Images/Cheese_volcano_menu.png" class="card-img-top" alt="Cheese Volcano Pizza">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-semibold">Cheese Volcano Pizza</h5>
+                <p class="card-text">Molten cheese center, mozzarella layers, crispy golden crust</p>
+                <p class="text-danger fw-bold">₹299.00</p>
+                <button class="btn btn-orange">Order Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card shadow">
+              <img src="Images/Veggie_Supreme_menu.jpg" class="card-img-top" alt="Veggie Supreme Pizza">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-semibold">Veggie Supreme Pizza</h5>
+                <p class="card-text">Capsicum, onions, olives, sweet corn, mozzarella cheese</p>
+                <p class="text-danger fw-bold">₹249.00</p>
+                <button class="btn btn-orange">Order Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Burgers Category -->
+      <div class="tab-pane fade" id="burger" role="tabpanel">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card shadow">
+              <img src="Images/Cheese_burger_menu.jpg" class="card-img-top" alt="Classic Cheeseburger">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-semibold">Classic Cheeseburger</h5>
+                <p class="card-text">Juicy beef patty, cheddar cheese, lettuce, tomato</p>
+                <p class="text-danger fw-bold">₹179.00</p>
+                <button class="btn btn-orange">Order Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card shadow">
+              <img src="Images/Chicken_Crispy_Burger_menu.jpg" class="card-img-top" alt="Chicken Crispy Burger">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-semibold">Chicken Crispy Burger</h5>
+                <p class="card-text">Crispy chicken fillet, lettuce, creamy mayo sauce</p>
+                <p class="text-danger fw-bold">₹199.00</p>
+                <button class="btn btn-orange">Order Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card shadow">
+              <img src="Images/Veggie_Deluxe_Burger_menu.jpg" class="card-img-top" alt="Veggie Deluxe Burger">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-semibold">Veggie Deluxe Burger</h5>
+                <p class="card-text">Grilled veggie patty, lettuce, tomato, cheese</p>
+                <p class="text-danger fw-bold">₹149.00</p>
+                <button class="btn btn-orange">Order Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card shadow">
+              <img src="Images/Double_Patty_Burger_menu.jpg" class="card-img-top" alt="Double Patty Burger">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-semibold">Double Patty Burger</h5>
+                <p class="card-text">Two juicy patties, double cheese, fresh lettuce</p>
+                <p class="text-danger fw-bold">₹249.00</p>
+                <button class="btn btn-orange">Order Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Biryani Category -->
+      <div class="tab-pane fade" id="Biryani" role="tabpanel">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card shadow">
+              <img src="images/Chicken_Dum_Biryani.jpg" class="card-img-top" alt="Hyderabadi Chicken Biryani">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-semibold">Hyderabadi Chicken Biryani</h5>
+                <p class="card-text">Fragrant basmati rice, spicy chicken, traditional dum cooking</p>
+                <p class="text-danger fw-bold">₹249.00</p>
+                <button class="btn btn-orange">Order Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card shadow">
+              <img src="images/Mutton_biryani_menu.jpg" class="card-img-top" alt="Mutton Biryani">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-semibold">Mutton Biryani</h5>
+                <p class="card-text">Tender mutton pieces, aromatic spices, basmati rice</p>
+                <p class="text-danger fw-bold">₹329.00</p>
+                <button class="btn btn-orange">Order Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card shadow">
+              <img src="images/Veg_biryani_menu.jpg" class="card-img-top" alt="Veg Biryani">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-semibold">Veg Biryani</h5>
+                <p class="card-text">Fresh vegetables, aromatic basmati rice, rich spices</p>
+                <p class="text-danger fw-bold">₹199.50</p>
+                <button class="btn btn-orange">Order Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card shadow">
+              <img src="images/Paneer_Biryani_menu.jpg" class="card-img-top" alt="Paneer Biryani">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-semibold">Paneer Biryani</h5>
+                <p class="card-text">Soft paneer cubes, fragrant rice, flavorful spices</p>
+                <p class="text-danger fw-bold">₹229.99</p>
+                <button class="btn btn-orange">Order Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desserts Category -->
+      <div class="tab-pane fade" id="desserts" role="tabpanel">
+        <!--Cakes category-->
+        <h3>Cakes</h3>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card shadow">
+              <img src="images/Chocolate_Truffle_Cake_menu.jpeg" class="card-img-top" alt="Chocolate Truffle Cake">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-semibold">Chocolate Truffle Cake</h5>
+                <p class="card-text">Rich chocolate layers, smooth ganache, creamy frosting</p>
+                <p class="text-danger fw-bold">₹199.99 (per slice)</p>
+                <button class="btn btn-orange">Order Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card shadow">
+              <img src="images/Black_Forest_Cake_menu.jpg" class="card-img-top" alt="Black Forest Cake">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-semibold">Black Forest Cake</h5>
+                <p class="card-text">Chocolate sponge, whipped cream, cherries, chocolate flakes</p>
+                <p class="text-danger fw-bold">₹110.00 (per slice)</p>
+                <button class="btn btn-orange">Order Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card shadow">
+              <img src="images/Red_Velvet_Cake_menu.jpg" class="card-img-top" alt="Red Velvet Cake">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-semibold">Red Velvet Cake</h5>
+                <p class="card-text">Soft red sponge, cream cheese frosting, velvety texture</p>
+                <p class="text-danger fw-bold">₹130.50 (per slice)</p>
+                <button class="btn btn-orange">Order Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card shadow">
+              <img src="images/Vanilla_Cream_Cake_menu.jpg" class="card-img-top" alt="Vanilla Cream Cake">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-semibold">Vanilla Cream Cake</h5>
+                <p class="card-text">Light vanilla sponge, fresh cream frosting, sweet flavor</p>
+                <p class="text-danger fw-bold">₹99.99 (per slice)</p>
+                <button class="btn btn-orange">Order Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Ice Creams category-->
+        <h3>Ice Creams</h3>
+        <div class="row">
+           <div class="col-md-3">
+            <div class="card shadow">
+              <img src="images/Chocolate_Ice_Cream_menu.jpg" class="card-img-top" alt="Chocolate Ice Cream">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-semibold">Chocolate Ice Cream</h5>
+                <p class="card-text">Rich chocolate flavor, creamy texture, chilled delight</p>
+                <p class="text-danger fw-bold">₹89.99</p>
+                <button class="btn btn-orange">Order Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card shadow">
+              <img src="images/Vanilla_Ice_Cream_menu.webp" class="card-img-top" alt="Vanilla Ice Cream">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-semibold">Vanilla Ice Cream</h5>
+                <p class="card-text">Classic vanilla flavor, smooth and creamy taste</p>
+                <p class="text-danger fw-bold">₹79.99</p>
+                <button class="btn btn-orange">Order Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card shadow">
+              <img src="images/Strawberry_Ice_Cream_menu.jpg" class="card-img-top" alt="Strawberry Ice Cream">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-semibold">Strawberry Ice Cream</h5>
+                <p class="card-text">Fresh strawberry flavor, sweet and refreshing</p>
+                <p class="text-danger fw-bold">₹89.99</p>
+                <button class="btn btn-orange">Order Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card shadow">
+              <img src="images/Butterscotch_Ice_Cream_menu.png" class="card-img-top" alt="Butterscotch Ice Cream">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-semibold">Butterscotch Ice Cream</h5>
+                <p class="card-text">Buttery caramel flavor, crunchy praline topping</p>
+                <p class="text-danger fw-bold">₹99.99</p>
+                <button class="btn btn-orange">Order Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Drinks category-->
+        <h3>Drinks</h3>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card shadow">
+              <img src="images/Thums_Up_menu.jpg" class="card-img-top" alt="Thums Up">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-semibold">Thums Up</h5>
+                <p class="card-text">Strong cola taste, extra fizz, served ice cold</p>
+                <p class="text-danger fw-bold">₹59.99</p>
+                <button class="btn btn-orange">Order Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card shadow">
+              <img src="images/Blue_Lagoon_Mocktail_menu.jpg" class="card-img-top" alt="Blue Lagoon Mocktail">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-semibold">Blue Lagoon Mocktail</h5>
+                <p class="card-text">Blue curacao flavor, lemon juice, sparkling soda</p>
+                <p class="text-danger fw-bold">₹149.99</p>
+                <button class="btn btn-orange">Order Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card shadow">
+              <img src="images/Virgin_Mojito_menu.jpg" class="card-img-top" alt="Virgin Mojito">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-semibold">Virgin Mojito</h5>
+                <p class="card-text">Fresh mint leaves, lime juice, sparkling soda</p>
+                <p class="text-danger fw-bold">₹119.00</p>
+                <button class="btn btn-orange">Order Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card shadow">
+              <img src="images/Chocolate_Milkshake_menu.jpg" class="card-img-top" alt="Chocolate Milkshake">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-semibold">Chocolate Milkshake</h5>
+                <p class="card-text">Creamy milk, rich chocolate syrup, smooth texture</p>
+                <p class="text-danger fw-bold">₹179.00</p>
+                <button class="btn btn-orange">Order Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<section class="m-0">
+
+        <footer class="bg-dark text-white text-center align-items-center text-capitalize py-4">
+            <h5>&copy; 2026 Hunger Hub | All Rights Reserved</h5>
+
+            <p>For more details : Follow Us on</p>
+
+            <div>
+                <a href="https://www.facebook.com/" class="text-decoration-none"><span class="bi bi-facebook px-1 fs-4 "> </span></a>
+                <a href="https://www.instagram.com/" class="text-decoration-none text-pink"><span class="bi bi-instagram px-1 fs-4"> </span></a>
+                <a href="https://www.whatsapp.com/" class="text-decoration-none text-success"><span class="bi bi-whatsapp px-1 fs-4"> </span></a>
+                <a href="https://www.google.com/" class="text-decoration-none text-white"><span class="bi bi-google px-1 fs-4"> </span></a>
+                <a href="https://www.youtube.com/" class="text-decoration-none text-danger"><span class="bi bi-youtube px-1 fs-4 "> </span></a>
+                <a href="https://web.telegram.org/" class="text-decoration-none"><span class="bi bi-telegram px-1 fs-4"> </span></a>
+            </div>
+            <span class="bi bi-geo-alt-fill text-danger fs-4"> </span><span>hyderabad|vijayawada|guntur|ongole</span>
+
+        </footer>
+        
+    </section>
+
+</body>
+</html>
